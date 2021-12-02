@@ -1,0 +1,39 @@
+{
+    "dir": "ltr",
+    "lang": "Czech",
+    "name": "Home Page bojler24",
+    "short_name": "Home Page bojler",
+    "scope": "/",
+    "display": "fullscreen",
+    "start_url": "https://instalater24.cz/home",
+    "background_color": "orange",
+    "theme_color": "orange",
+    "description": "bojler ",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "https://instalaterbojler.s3.eu-central-1.amazonaws.com/instalater24/static/assets/img/logo.png",
+            "type": "image/png",
+            "sizes": "388x359"
+        },
+        {
+            "src": "https://instalaterbojler.s3.eu-central-1.amazonaws.com/instalater24/static/assets/img/apple-icon-180x180.png",
+            "type": "image/png",
+            "sizes": "180x180"
+        },
+        {
+            "src": "https://instalaterbojler.s3.eu-central-1.amazonaws.com/instalater24/static/assets/img/logo.png",
+            "type": "image/png",
+            "sizes": "388x359"
+        },
+        {
+            "src": "https://instalaterbojler.s3.eu-central-1.amazonaws.com/instalater24/static/img/logo.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }
+    ],
+    "url": "https://instalater24.cz/home"
+}

@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+
+Disallow: /crm
+Disallow: /form1
+Disallow: /price
+Disallow: /form2
+Disallow: /phonenew
+Disallow: /namephonenew
+Disallow: /mmnamephonenew
+
+
+Sitemap: https://instalater24.cz/sitemap.xml
+
