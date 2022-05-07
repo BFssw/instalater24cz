@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <meta name="Description" content="{{description}}">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="icon" href="{{favicon}}" type="image/x-icon">
+  <style>
+    input,button{border: unset;}
+    a{text-decoration: none;}
+    body,p,h1,h2,h3,h4,h5,h6,input{margin: unset;}
+    @media screen and (min-width: 900px) {
+body{max-width: 1600px;}
+.BaM9xDQ{position: absolute;width: 523px;height: 138px;left: 254px;top: 77px;font-family: sans-serif;font-style: normal;font-weight: 700;font-size: 42px;line-height: 109.69%;/* or 46px */text-transform: uppercase;color: #3E3E3E;}
+.ozoljEs{position: absolute;width: 497px;height: 50px;left: 849px;top: 120px;background: #F3F3F3;border-radius: 3px;}
+.e3XppNE{position: absolute;width: 499px;height: 50px;left: 847px;top: 54px;background: #F3F3F3;border-radius: 3px;}
+.uJJK00Q{position: absolute;width: 497px;height: 50px;left: 849px;top: 189px;background: #FF4444;border-radius: 5px;font-family: sans-serif;font-style: normal;font-weight: 700;font-size: 17px;line-height: 21px;text-align: center;color: #FFFFFF;}
+.qsc0QDs{position: relative;width: 1600px;height: 294px;background: #FFFFFF;}
+ 
+    }
+    @media screen and (max-width: 900px) {
+body{max-width: 360px;}
+.BaM9xDQ{position: absolute;width: 320px;height: 195px;left: 20px;top: 76px;font-family: sans-serif;font-style: normal;font-weight: 700;font-size: 36px;line-height: 109.69%;/* or 39px */text-transform: uppercase;color: #3E3E3E;}
+.ozoljEs{position: absolute;width: 318.72px;height: 50px;left: 21.28px;top: 381px;background: #F3F3F3;border-radius: 3px;}
+.e3XppNE{position: absolute;width: 320px;height: 50px;left: 20px;top: 311px;background: #F3F3F3;border-radius: 3px;}
+.uJJK00Q{position: absolute;width: 318.72px;height: 50px;left: 21.28px;top: 451px;background: #FF4444;border-radius: 5px;font-family: sans-serif;font-style: normal;font-weight: 700;font-size: 17px;line-height: 21px;text-align: center;color: #FFFFFF;}
+.qsc0QDs{position: relative;width: 360px;height: 521px;background: #FFFFFF;}
+ 
+    }
+  </style>
+</head>
+
+<body style="overflow-x: hidden;">
+  <script>
+    function iOS() {
+    return ['iPad Simulator','iPhone Simulator','iPod Simulator','iPad','iPhone','iPod'].includes(navigator.platform)
+    || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+    }
+    async function someFunc() {
+        if (iOS() == true){
+        var w=screen.width;}else{var w = self.innerWidth;}
+        if (w <900){
+            zo=w*100/360
+            if(navigator.userAgent.indexOf("Firefox") != -1 ){
+                document.querySelector("body").style.MozTransform='scale('+zo+'%)';
+                document.querySelector("body").style.MozTransformOrigin='0px 0px';
+                document.querySelector("body").style.backgroundSize=(360*zo/100)+'px';
+                }
+            document.querySelector("body").style.zoom=zo+'%'}
+        else{
+            zo=w*100/1600
+            if(navigator.userAgent.indexOf("Firefox") != -1 ){
+                document.querySelector("body").style.MozTransform='scale('+zo+'%)';
+                document.querySelector("body").style.MozTransformOrigin='0px 0px';
+                document.querySelector("body").style.backgroundSize=(1600*zo/100)+'px';}
+            document.querySelector("body").style.zoom=zo+'%'}}
+    someFunc();
+    window.addEventListener('resize', () => someFunc(),{passive: true});
+  </script>
+
+<form class='qsc0QDs' >
+    <h2 class='BaM9xDQ' >
+        Zanechte nám svůj kontakt a my Vám zavoláme zpět 
+    </h2>
+    
+    <input class='e3XppNE' name='name' placeholder="Jmeno">
+    <input class='ozoljEs' name='name' placeholder="Tel. číslo">
+    <button class='uJJK00Q' >
+        Objednat 
+    </button> 
+</form>
+
+</body>
