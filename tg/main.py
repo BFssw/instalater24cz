@@ -8,7 +8,9 @@ import subprocess
 tb = telebot.TeleBot("5306701764:AAEYRWHeiLllJHVYbgi6fRFRMEUUQ5_8q9o")
 
 
-
+@app.route('/bot-tg-photo/test',methods=['GET','POST'])
+def test():
+    return f"OK"
 
 @app.route('/bot-tg-photo',methods=['GET','POST'])
 def head():
