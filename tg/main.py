@@ -5,7 +5,8 @@ import codecs
 import secrets
 app = Flask(__name__)
 import subprocess
-tb = telebot.TeleBot("5306701764:AAEYRWHeiLllJHVYbgi6fRFRMEUUQ5_8q9o")
+import settings
+tb = telebot.TeleBot(settings.bot_token)
 
 
 @app.route('/bot-tg-photo/test',methods=['GET','POST'])
@@ -22,7 +23,7 @@ def head():
         f.write(h)
         f.close()
         subprocess.run(f"cwebp {name}.{pth.split('.')[-1]} -o {name}.webp",shell=True)
-        tb.send_message(js['message']['chat']['id'],f"https://raw.githubusercontent.com/BFssw/instalater24cz/main/tg/{name}.webp")
+        tb.send_message(js['message']['chat']['id'],f"{settings.pre_url}{name}.webp")
     try:
         if js['message']['text'] == '/start' or js['message']['text'] == '/status':
             tb.send_message(js['message']['chat']['id'],f"{js['message']['chat']['id']} - work")
