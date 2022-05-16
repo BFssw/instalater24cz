@@ -27,18 +27,18 @@ body{max-width: 1600px;}
  
     }
     @media screen and (max-width: 900px) {
-body{max-width: 360px;}
-.qn8HFZ0{position: absolute;width: 317px;height: 156px;left: 20px;top: 30px;font-family: sans-serif;font-style: normal;font-weight: 700;font-size: 36px;line-height: 109.69%;/* or 39px */text-transform: uppercase;color: #3E3E3E;}
-.MSsdDes{border-bottom: 1px solid;position: absolute;width: 320px;height: 38px;left: 9px;top: 55px;}
-.SRstcqQ{border-bottom: 1px solid;position: absolute;width: 320px;height: 38px;left: 9px;top: 130px;}
-.E5BVjyM{border-bottom: 1px solid;position: absolute;width: 320px;height: 38px;left: 9px;top: 203px;}
-.Xl5UIaY{position: absolute;width: 220px;height: 55px;left: 11px;top: 287px;background: #FF4444;border-radius: 5px;font-family: sans-serif;font-style: normal;font-weight: 700;font-size: 17px;line-height: 20px;color: #FFFFFF;}
-.nGNdjkk{position: absolute;width: 75px;height: 55px;left: 251px;top: 287px;border: 1px solid #3E3E3E;box-sizing: border-box;border-radius: 5px;}
-.ryHJcXo{position: absolute;width: 338px;height: 362px;left: 11px;top: 294px;background: #FFFFFF;border-radius: 5px;}
-.Bc19T7U{position: absolute;width: 232px;height: 69px;left: 20px;top: 204px;font-family: sans-serif;font-style: normal;font-weight: 600;font-size: 24px;line-height: 109.69%;/* or 26px */color: #3E3E3E;}
-.rLvqaVg{position: absolute;width: 66.15px;height: 130px;left: 266px;top: 219px;object-fit: cover;}
+body{max-width: 320px;}
+.qn8HFZ0{position: absolute;width: 298px;height: 156px;left: 11px;top: 17px;font-family: sans-serif;font-style: normal;font-weight: 700;font-size: 36px;line-height: 109.69%;/* or 39px */text-transform: uppercase;color: #3E3E3E;}
+.MSsdDes{border-bottom: 1px solid;position: absolute;width: 282px;height: 38px;left: 9px;top: 55px;}
+.SRstcqQ{border-bottom: 1px solid;position: absolute;width: 282px;height: 38px;left: 9px;top: 130px;}
+.E5BVjyM{border-bottom: 1px solid;position: absolute;width: 282px;height: 38px;left: 9px;top: 203px;}
+.Xl5UIaY{position: absolute;width: 204px;height: 50px;left: 9px;top: 284px;background: #FF4444;border-radius: 5px;font-family: sans-serif;font-style: normal;font-weight: 700;font-size: 17px;line-height: 20px;color: #FFFFFF;}
+.nGNdjkk{position: absolute;width: 65px;height: 50px;left: 226px;top: 284px;border: 1px solid #3E3E3E;box-sizing: border-box;border-radius: 5px;}
+.ryHJcXo{position: absolute;width: 300px;height: 362px;left: 10px;top: 273px;background: #FFFFFF;border-radius: 5px;}
+.Bc19T7U{position: absolute;width: 232px;height: 69px;left: 10px;top: 187px;font-family: sans-serif;font-style: normal;font-weight: 600;font-size: 24px;line-height: 109.69%;/* or 26px */color: #3E3E3E;}
+.rLvqaVg{position: absolute;width: 66.15px;height: 130px;left: 242px;top: 196px;object-fit: cover;}
 .uRVcCOI{display:none;}
-.vnWKMW4{position: relative;width: 360px;height: 705.5px;}
+.vnWKMW4{position: relative;width: 320px;height: 707px;}
 .pc{display: none;}
     }
   </style>
@@ -54,11 +54,11 @@ body{max-width: 360px;}
         if (iOS() == true){
         var w=screen.width;}else{var w = self.innerWidth;}
         if (w <900){
-            zo=w*100/360
+            zo=w*100/320
             if(navigator.userAgent.indexOf("Firefox") != -1 ){
                 document.querySelector("body").style.MozTransform='scale('+zo+'%)';
                 document.querySelector("body").style.MozTransformOrigin='0px 0px';
-                document.querySelector("body").style.backgroundSize=(360*zo/100)+'px';
+                document.querySelector("body").style.backgroundSize=(320*zo/100)+'px';
                 }
             document.querySelector("body").style.zoom=zo+'%'}
         else{
@@ -79,12 +79,12 @@ body{max-width: 360px;}
     <svg class='uRVcCOI mob' width="360" height="706" viewBox="0 0 360 706" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 0L360 0V676.353L126.5 705.5L0 676.353V0Z" fill="#F3F3F3"/>
         </svg>
+    <svg class='uRVcCOI mob'  width="320" height="707" viewBox="0 0 320 707" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0L320 0V677.791L112.444 707L0 677.791V0Z" fill="#F3F3F3"/></svg>
             
-        
     <h2 class='qn8HFZ0' >
         Diagnóza a cena opravy podle fotky do 5 minut 
     </h2>
-
     <form class='ryHJcXo' >
         <input class='MSsdDes' name='name' placeholder="Tvé jméno">
              
@@ -106,7 +106,6 @@ body{max-width: 360px;}
         Nechte si nacenit opravu podle fotky ihned 
     </p>
     <img class='rLvqaVg' src='https://raw.githubusercontent.com/BFssw/instalater24cz/main/f3/p.webp' loading='lazy' alt=''>
-    
 </div>
 
 </body>
