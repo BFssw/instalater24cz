@@ -2,3 +2,4 @@
 tg/settings.py
 *.deb
 video/Jeden den instalatéra 24-paqpW26CDU4.mp4
+tg/__pycache__/settings.cpython-310.pyc
